@@ -4,26 +4,7 @@ import { fetchAPI } from '../../actions/home';
 
 const pageConfig = {
   data: {
-    motto: 'Hello World!',
-    userInfo: {},
-  },
-  // 事件处理函数
-  onViewTap() {
-    wx.navigateTo({
-      url: '../logs/logs',
-    });
-  },
-  onEditorTap() {
-    wx.navigateTo({
-      url: '../editor/index',
-    });
-  },
-  onGetUserInfo(e) {
-    this.storeUserInfo(e.detail.userInfo);
-  },
-  onLoad() {
-    console.log('DEV: ', __DEV__);
-    this.fetchAPI({ motto: 'Hello Vedux!' });
+    initDelta: null,
   },
 };
 

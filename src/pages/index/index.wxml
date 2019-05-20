@@ -13,4 +13,5 @@
   <view class="powered" contenteditable="true">
     <text>{{powered.by}}</text>
   </view>
+  <button bindtap="onEditorTap" >跳编辑器</button>
 </view>

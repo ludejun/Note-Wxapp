@@ -1,0 +1,3 @@
+<view>
+  <richText readOnly="{{false}}" init-delta="{{initDelta}}"/>
+</view>

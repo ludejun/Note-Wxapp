@@ -1,0 +1,45 @@
+@import "./iconfont.wxss";
+
+.wrapper {
+  padding: 5px;
+  position: relative;
+}
+
+.iconfont {
+  display: inline-block;
+  padding: 8px 8px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.toolbar {
+  box-sizing: border-box;
+  /* border: 1px solid #ccc; */
+  border-bottom: 0;
+  font-family: 'Microsoft YaHei', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.ql-container {
+  height: 500rpx;
+}
+
+.toolbar-selector {
+  position: absolute;
+  top: 80rpx;
+  background: #fff;
+}
+.fontSize-selector {
+  width: 100rpx;
+  left: 250rpx;
+}
+.color-selector, .background-selector {
+  left: 300rpx;
+}
+.color-selector view, .background-selector view {
+  width: 36rpx;
+  height: 36rpx;
+  float: left;
+  margin: 3rpx;
+}
