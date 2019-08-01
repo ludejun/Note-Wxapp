@@ -9,6 +9,9 @@ min install @minui/wxc-toast
 
 组件库文档：https://meili.github.io/min/docs/minui/index.html
 
+动态图片打包问题：
+wxml-loader并不能解析动态图片url引入，需要借助copy-webpack-plugin将图片直接copy打包，url配置在package.json的copyWebpack字段中
+
 ## 功能
 
 * 支持引用 `node_modules` 模块

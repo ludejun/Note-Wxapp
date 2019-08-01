@@ -1,6 +1,10 @@
 
 {
+  "navigationBarTitleText": "首页",
+  "navigationStyle": "custom",
   "usingComponents": {
-    "user": "../../components/user/user"
+    "user": "../../components/user/user",
+    "navBar": "../../components/navBar/index",
+    "toast": "../../components/@minui/wxc-toast/dist/index"
   }
 }

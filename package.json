@@ -94,5 +94,11 @@
     "webpack",
     "redux",
     "vedux"
+  ],
+  "copyWebpack": [
+    "./components/navBar/icon/home-black.png",
+    "./components/navBar/icon/home-white.png",
+    "./components/navBar/icon/return-black.png",
+    "./components/navBar/icon/return-white.png"
   ]
 }

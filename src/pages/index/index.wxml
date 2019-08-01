@@ -2,6 +2,7 @@
 <import src="../../wxml/motto/motto.wxml"/>
 <wxs src="../../wxs/powered.wxs" module="powered" />
 
+<navBar />
 <view class="container">
   <view bindtap="onViewTap">
     <user avatarUrl="{{userInfo.avatarUrl}}" nickName="{{userInfo.nickName}}"></user>

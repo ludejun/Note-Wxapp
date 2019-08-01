@@ -1,0 +1,28 @@
+<view class="nav" style="height:{{status + navHeight}}px;background:{{background}}" wx:if="{{isShow}}">
+  <view class="status" style="height:{{status}}px;"></view>
+  <view class="navbar" style="height:{{navHeight}}px;">
+    <view class="left-container" style="top:{{navHeight===48?8:6}}px" wx:if="{{!onlyHome && !onlyBack}}">
+      <view class="back-icon" bindtap="back">
+        <image src="{{styleType==='white'?'../icon/return-white.png':'./icon/return-black.png'}}"></image>
+      </view>
+      <view class="left-divide" style="background:{{styleType==='white' ? 'rgba(255,255,255,0.3)':'rgba(0,0,0,0.2)' }}"></view>
+      <view class="home-icon" bindtap="home">
+        <image src="{{styleType==='white'?'./icon/home-white.png':'./icon/home-black.png'}}"></image>
+      </view>
+      <view class="left-border" style="border-color:{{styleType==='white'?'rgba(255,255,255,0.3)':'rgba(0,0,0,0.08)'}}"></view>
+    </view>
+    <view class="no-border" style="top:{{navHeight===48?8:6}}px" wx:else>
+      <view class="back-icon" bindtap="back" wx:if="{{onlyBack}}">
+        <image src="{{styleType==='white'?'./icon/return-white.png':'./icon/return-black.png'}}"></image>
+      </view>
+      <view class="home-icon" bindtap="home" wx:if="{{onlyHome}}">
+        <image src="{{styleType==='white'?'./icon/home-white.png':'./icon/home-black.png'}}"></image>
+      </view>
+      <view class="home-border" wx:if="{{onlyHome}}" style="border-color:{{styleType==='white'?'rgba(255,255,255,0.3)':'rgba(0,0,0,0.08)'}}"></view>
+    </view>
+    <view class="nav-title">
+      <view style="color:{{styleType === 'white' ? '#fff':'#000'}}; width: {{!!titleWidth ? titleWidth+'px':'100%'}};">{{title || '自定义导航栏'}}</view>
+    </view>
+  </view>
+</view>
+<view style="height:{{status + navHeight}}px;" wx:if="{{isShow}}"></view>

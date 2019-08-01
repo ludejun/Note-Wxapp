@@ -23,6 +23,7 @@ const pageConfig = {
   },
   onLoad() {
     console.log('DEV: ', __DEV__);
+    wx.setNavigationBarTitle({title: '首页Show'});
     this.fetchAPI({ motto: 'Hello Vedux!' });
   },
 };
